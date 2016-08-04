@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd"
+
+
+	default-lazy-init="true">
+	<!-- default-init-method="initHome" default-destroy-method="destroyHome" -->
+
+	<!-- to prevent conflicts, add in block comment most of annotations in the 
+		project. annotations, which were used for this file labeled relevant comments -->
+
+	<import resource="elements_context.xml" />
+	<context:annotation-config />
+	<bean
+		class="dmytro.learn.spring.framework.core.postprocessors.CustomBeanPostPocessor" />
+
+
+	<bean id="HomeAbstract" class="dmytro.learn.spring.framework.core.impls.home.Home"
+		abstract="true" />
+
+
+	<bean id="Home1" parent="HomeAbstract" c:door-ref="GoodQualityDoor"
+		c:furniture-ref="LowQualityFurniture" c:window-ref="GoodQualityWindow" />
+
+	<bean id="Home2" parent="Home1" p:color="GREEN" p:floors="9"
+		p:populated="true" />
+
+	<bean id="Home3" parent="Home1">
+		<constructor-arg index="3" value="9" />
+		<constructor-arg name="color" value="GREEN" />
+		<constructor-arg type="boolean" value="true" />
+	</bean>
+
+
+	<bean id="HomePrototype" parent="Home2" scope="prototype" />
+	<bean id="HomeFactory"
+		class="dmytro.learn.spring.framework.core.impls.home.HomeFactory">
+		<lookup-method name="createBuilding" bean="HomePrototype" />
+	</bean>
+
+	<bean id="ActivityReplacer"
+		class="dmytro.learn.spring.framework.core.methodreplacers.ActivityReplacer" />
+	<bean id="HomeReplacedMethod" parent="Home1">
+		<replaced-method name="enableActivity" replacer="ActivityReplacer" />
+	</bean>
+
+	<bean id="HomeCustomInitDestroy" parent="Home1" init-method="initHome"
+		destroy-method="destroyHome" />
+
+
+	<bean id="HomePoolAbstract" class="dmytro.learn.spring.framework.core.impls.home.HomePool"
+		abstract="true" />
+
+	<bean id="HomePoolMap" parent="HomePoolAbstract">
+		<property name="buildingMap">
+			<map>
+				<entry key="1" value-ref="HomePrototype" />
+				<entry key="2" value-ref="HomePrototype" />
+				<entry key="3" value-ref="HomePrototype" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="HomePoolList" parent="HomePoolAbstract">
+		<property name="buildingList">
+			<list>
+				<bean parent="Home3" p:color="YELLOW" p:floors="18" />
+				<ref bean="Home3" />
+				<ref bean="Home3" />
+			</list>
+		</property>
+	</bean>
+
+
+	<bean id="HomeFilteredList9Floors" parent="HomePoolAbstract">
+		<property name="buildingList" value="#{HomePoolList.buildingList.?[floors eq 9]}" />
+	</bean>
+
+	<bean id="HomeFilteredListYellow" parent="HomePoolAbstract">
+		<property name="buildingList"
+			value="#{HomePoolList.buildingList.?[color eq Color.YELLOW]}" />
+	</bean>
+
+	<!-- for use this bean set autowire-candidate="false" in element_context.xml 
+		for excessive beans GoodQualityDoor -->
+	<bean id="HomeXMLAutowired" parent="HomeAbstract" autowire="byType" />
+
+
+	<!-- annotations are in dmytro.learn.spring.framework.core.abstracts.House -->
+	<bean id="HomeQualifierAutowired" parent="HomeAbstract" />
+
+	<!-- annotations are in dmytro.learn.spring.framework.core.abstracts.House -->
+	<bean id="HomeRequiredProperty" parent="HomeAbstract" p:door-ref="LowQualityDoor"
+		p:furniture-ref="LowQualityFurniture" p:window-ref="LowQualityWindow" />
+
+</beans>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+
+	default-lazy-init="true">
+
+	<!-- elements (fields) of the dmytro.learn.spring.framework.core.abstracts.House -->
+
+	<bean id="AbstractGoodQualityDoor"
+		class="dmytro.learn.spring.framework.core.impls.elements.goodquality.GoodQualityDoor"
+		abstract="true" />
+
+	<bean parent="AbstractGoodQualityDoor">
+		<property name="bulletproof" value="true" />
+		<qualifier value="bulletproofDoor" />
+	</bean>
+
+	<bean parent="AbstractGoodQualityDoor">
+		<property name="bulletproof" value="false" />
+		<qualifier value="notBulletproofDoor" />
+	</bean>
+
+	<bean id="GoodQualityDoor" parent="AbstractGoodQualityDoor" />
+
+
+	<bean id="GoodQualityFurniture"
+		class="dmytro.learn.spring.framework.core.impls.elements.goodquality.GoodQualityFurniture" />
+	<bean id="GoodQualityWindow"
+		class="dmytro.learn.spring.framework.core.impls.elements.goodquality.GoodQualityWindow" />
+
+
+	<bean id="LowQualityDoor"
+		class="dmytro.learn.spring.framework.core.impls.elements.lowquality.LowQualityDoor"
+		autowire-candidate="false" />
+	<bean id="LowQualityFurniture"
+		class="dmytro.learn.spring.framework.core.impls.elements.lowquality.LowQualityFurniture"
+		autowire-candidate="false" />
+	<bean id="LowQualityWindow"
+		class="dmytro.learn.spring.framework.core.impls.elements.lowquality.LowQualityWindow"
+		autowire-candidate="false" />
+
+</beans>
