@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.10" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="dmytro.learn.spring.framework.core.impls.home.Home" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/impls/home/Home.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-11" y="301"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="false" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="dmytro.learn.spring.framework.core.abstracts.House" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/abstracts/House.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="319" y="301"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="false" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="dmytro.learn.spring.framework.core.interfaces.Building" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/interfaces/Building.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="320" y="-199"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="4" language="java" name="dmytro.learn.spring.framework.core.interfaces.Door" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/interfaces/Door.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="634" y="192"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="5" language="java" name="dmytro.learn.spring.framework.core.interfaces.Furniture" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/interfaces/Furniture.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="634" y="301"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="6" language="java" name="dmytro.learn.spring.framework.core.interfaces.Window" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/interfaces/Window.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="634" y="403"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <enumeration id="7" language="java" name="dmytro.learn.spring.framework.core.enums.Color" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/enums/Color.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-291" y="301"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <note id="8">    
+    <position height="34" width="200" x="-391" y="462"/>    
+    <text><![CDATA[home4() and home5() are beans
+    ]]>
+    </text>  
+  </note>  
+  <class id="9" language="java" name="dmytro.learn.spring.framework.core.impls.elements.goodquality.GoodQualityDoor" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/impls/elements/goodquality/GoodQualityDoor.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="942" y="-31"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="false" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="dmytro.learn.spring.framework.core.impls.elements.lowquality.LowQualityDoor" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/impls/elements/lowquality/LowQualityDoor.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="942" y="106"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" 
+    name="dmytro.learn.spring.framework.core.impls.elements.goodquality.GoodQualityFurniture" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/impls/elements/goodquality/GoodQualityFurniture.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="942" y="240"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="dmytro.learn.spring.framework.core.impls.elements.lowquality.LowQualityFurniture" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/impls/elements/lowquality/LowQualityFurniture.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="942" y="349"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="dmytro.learn.spring.framework.core.impls.elements.goodquality.GoodQualityWindow" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/impls/elements/goodquality/GoodQualityWindow.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="942" y="485"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="dmytro.learn.spring.framework.core.impls.elements.lowquality.LowQualityWindow" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/impls/elements/lowquality/LowQualityWindow.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="942" y="594"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <annotation id="15" language="java" name="org.springframework.stereotype.Component" project="LearnSpringFrameworkCore" 
+    
+    file="C:/Users/Dmytro/.m2/repository/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar" 
+    binary="true" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1278" y="301"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </annotation>  
+  <annotation id="16" language="java" name="org.springframework.context.annotation.Configuration" 
+    project="LearnSpringFrameworkCore" 
+    file="C:/Users/Dmytro/.m2/repository/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar" 
+    binary="true" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="187" y="594"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </annotation>  
+  <annotation id="17" language="java" name="org.springframework.context.annotation.Bean" 
+    project="LearnSpringFrameworkCore" 
+    file="C:/Users/Dmytro/.m2/repository/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar" 
+    binary="true" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-212" y="594"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </annotation>  
+  <annotation id="18" language="java" name="org.springframework.context.annotation.Scope" 
+    project="LearnSpringFrameworkCore" 
+    file="C:/Users/Dmytro/.m2/repository/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar" 
+    binary="true" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-10" y="594"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </annotation>  
+  <class id="19" language="java" name="dmytro.learn.spring.framework.core.postprocessors.CustomBeanPostPocessor" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/postprocessors/CustomBeanPostPocessor.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1278" y="495"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <annotation id="20" language="java" name="org.springframework.beans.factory.annotation.Autowired" 
+    project="LearnSpringFrameworkCore" 
+    file="C:/Users/Dmytro/.m2/repository/org/springframework/spring-beans/4.3.2.RELEASE/spring-beans-4.3.2.RELEASE.jar" 
+    binary="true" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="410" y="495"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </annotation>  
+  <class id="21" language="java" name="dmytro.learn.spring.framework.core.methodreplacers.ActivityReplacer" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/methodreplacers/ActivityReplacer.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1278" y="43"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="dmytro.learn.spring.framework.core.impls.home.HomeFactory" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/impls/home/HomeFactory.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="634" y="-80"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="23" language="java" name="dmytro.learn.spring.framework.core.interfaces.BuildingFactory" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/interfaces/BuildingFactory.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="634" y="43"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="24" language="java" name="dmytro.learn.spring.framework.core.impls.home.HomePool" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/impls/home/HomePool.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-10" y="-80"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="false" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="25" language="java" name="dmytro.learn.spring.framework.core.interfaces.BuildingPool" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/interfaces/BuildingPool.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-10" y="43"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <note id="26">    
+    <position height="44" width="46" x="296" y="381"/>    
+    <text><![CDATA[filling fields
+    ]]>
+    </text>  
+  </note>  
+  <annotation id="27" language="java" name="org.springframework.context.annotation.Lazy" 
+    project="LearnSpringFrameworkCore" 
+    file="C:/Users/Dmytro/.m2/repository/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar" 
+    binary="true" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1460" y="301"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </annotation>  
+  <class id="28" language="java" name="dmytro.learn.spring.framework.core.main.CoreMain" 
+    project="LearnSpringFrameworkCore" 
+    file="/LearnSpringFrameworkCore/src/main/java/dmytro/learn/spring/framework/core/main/CoreMain.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-291" y="-80"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <annotation id="29" language="java" name="javax.inject.Inject" project="LearnSpringFrameworkCore" 
+    file="C:/Users/Dmytro/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar" binary="true" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="231" y="486"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </annotation>  
+  <note id="30">    
+    <position height="135" width="244" x="-413" y="-24"/>    
+    <text><![CDATA[About using beans:
+Using only_component_scan_context.xml main class work with class Home.
+Using old_context.xml  main class work with classes:
+- Home
+- HomePool
+- HomeFactory
+    ]]>
+    </text>  
+  </note>  
+  <note id="31">    
+    <position height="69" width="363" x="1188" y="158"/>    
+    <text><![CDATA[@Components in package dmytro.learn.spring.framework.core.impls.elements.goodquality used with @Lazy. For a simpler look, @Lazy relationships are not shown here.
+    ]]>
+    </text>  
+  </note>  
+  <realization id="32">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <dependency id="33">    
+    <bendpoint x="491" y="-199"/>    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="34">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <association id="35">    
+    <end type="SOURCE" refId="1" navigable="false" variant="ASSOCIATION">      
+      <attribute id="36" name="color">        
+        <position height="0" width="0" x="-844" y="-208"/>      
+      </attribute>      
+      <multiplicity id="37" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-844" y="-208"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="38">    
+    <bendpoint x="764" y="68"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <dependency id="39">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <realization id="40">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <realization id="41">    
+    <bendpoint x="794" y="533"/>    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <text-link id="42">    
+    <link-end type="SOURCE" refId="31"/>    
+    <link-end type="TARGET" refId="15"/>  
+  </text-link>  
+  <dependency id="43">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <association id="44">    
+    <end type="SOURCE" refId="24" navigable="false" variant="AGGREGATION">      
+      <attribute id="45" name="buildingMap">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="46" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="47">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="18"/>  
+  </dependency>  
+  <dependency id="48">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="49">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="50">    
+    <bendpoint x="477" y="-50"/>    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="51">    
+    <bendpoint x="1127" y="72"/>    
+    <bendpoint x="1154" y="216"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <realization id="52">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <dependency id="53">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <association id="54">    
+    <bendpoint x="151" y="-199"/>    
+    <end type="SOURCE" refId="24" navigable="false" variant="AGGREGATION">      
+      <attribute id="55" name="buildingList">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="56" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <text-link id="57">    
+    <link-end type="SOURCE" refId="30"/>    
+    <link-end type="TARGET" refId="28"/>  
+  </text-link>  
+  <text-link id="58">    
+    <link-end type="SOURCE" refId="26"/>    
+    <link-end type="TARGET" refId="53"/>  
+  </text-link>  
+  <realization id="59">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <realization id="60">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <text-link id="61">    
+    <link-end type="SOURCE" refId="31"/>    
+    <link-end type="TARGET" refId="27"/>  
+  </text-link>  
+  <generalization id="62">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <text-link id="63">    
+    <link-end type="SOURCE" refId="26"/>    
+    <link-end type="TARGET" refId="64"/>  
+  </text-link>  
+  <association id="65">    
+    <bendpoint x="483" y="377"/>    
+    <end type="SOURCE" refId="2" navigable="false" variant="ASSOCIATION">      
+      <attribute id="66" name="window">        
+        <position height="18" width="48" x="478" y="347"/>      
+      </attribute>      
+      <multiplicity id="67" minimum="0" maximum="1">        
+        <position height="0" width="0" x="61" y="17"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="64">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <association id="68">    
+    <end type="SOURCE" refId="2" navigable="false" variant="ASSOCIATION">      
+      <attribute id="69" name="furniture">        
+        <position height="0" width="0" x="55" y="12"/>      
+      </attribute>      
+      <multiplicity id="70" minimum="0" maximum="1">        
+        <position height="0" width="0" x="55" y="12"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="71">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="23"/>  
+  </realization>  
+  <text-link id="72">    
+    <link-end type="SOURCE" refId="8"/>    
+    <link-end type="TARGET" refId="49"/>  
+  </text-link>  
+  <realization id="73">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <association id="74">    
+    <bendpoint x="485" y="220"/>    
+    <end type="SOURCE" refId="2" navigable="false" variant="ASSOCIATION">      
+      <attribute id="75" name="door">        
+        <position height="0" width="0" x="61" y="27"/>      
+      </attribute>      
+      <multiplicity id="76" minimum="0" maximum="1">        
+        <position height="0" width="0" x="61" y="27"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
